@@ -57,7 +57,8 @@
     list-style:none;
 }
 
-input,
+
+.input,
 button {
     outline:none;
 }
@@ -111,7 +112,7 @@ label[for='new-task'] {
     margin: 0 0 20px;
 }
 
-input#new-task {
+#new-task {
     width: 318px;
 }
 
