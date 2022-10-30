@@ -27,7 +27,7 @@ var createNewTaskElement=function(taskString){
     var label=document.createElement("label");//label
     //input (text)
     var editInput=document.createElement("input");//text
-    editInput.classList.add("input");
+
     //button.edit
     var editButton=document.createElement("button");//edit button
 
@@ -50,6 +50,9 @@ var createNewTaskElement=function(taskString){
     deleteButtonImg.src='./remove.svg';
     deleteButton.appendChild(deleteButtonImg);
 
+    editInput.classList.add("input");
+    editInput.classList.add("input-text");
+
 
     //and appending.
     listItem.appendChild(checkBox);
@@ -57,6 +60,8 @@ var createNewTaskElement=function(taskString){
     listItem.appendChild(editInput);
     listItem.appendChild(editButton);
     listItem.appendChild(deleteButton);
+    console.log(editInput)
+    console.log(editInput.classList)
     return listItem;
 }
 

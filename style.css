@@ -88,8 +88,8 @@ label[for='new-task'] {
     margin: 0;
     text-transform: uppercase;
 }
-
-input[type="text"] {
+.input-text {}
+.input-text {
     margin: 0;
     font-size: 18px;
     line-height: 18px;
@@ -102,7 +102,7 @@ input[type="text"] {
     color: #888;
 }
 
-input[type="text"]:focus {
+.input-text:focus {
     color: #333;
 }
 
@@ -142,7 +142,7 @@ label[for='new-task'] {
     width: 226px;
 }
 
-.list__item > input[type="text"] {
+.list__item > .input-text {
     width: 226px;
 }
 
@@ -163,11 +163,11 @@ button.delete img:hover {
 }
 
 /* Edit Task */
-.list__item input[type=text] {
+.list__item .input-text {
     display: none;
 }
 
-.list__item.edit-mode input[type=text] {
+.list__item.edit-mode .input-text {
     display: inline-block;
     width: 224px;
 }
