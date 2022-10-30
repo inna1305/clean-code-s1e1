@@ -1,5 +1,5 @@
 /* Basic Style */
-body {
+.body {
     background-color: #f8f8f8;
     color: #333;
     font-family: Lato, sans-serif;
@@ -12,17 +12,18 @@ body {
     text-align: right;
 }
 
-.matrix img {
+.matrix__picture {
     width: 100%;
 }
 
-.matrix .matrix__link {
+.matrix__link {
     font-family: fantasy, cursive;
 }
 
 @media (max-width:768px) {
 
-.matrix { text-align: center;
+.matrix {
+    text-align: center;
 }
 
 }
@@ -43,16 +44,21 @@ body {
     display: flex;
 }
 
-ul {
+.list {
     margin: 0;
     padding: 0px;
 }
 
-li, .title {
+.list__item {
+    list-style: none;
+}
+
+.title {
     list-style:none;
 }
 
-input,button {
+input,
+button {
     outline:none;
 }
 
