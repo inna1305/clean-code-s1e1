@@ -22,7 +22,7 @@ var createNewTaskElement=function(taskString){
 
     //input (checkbox)
     var checkBox=document.createElement("input");//checkbx
-    checkBox.classList.add("input");
+
     //label
     var label=document.createElement("label");//label
     //input (text)
@@ -52,6 +52,8 @@ var createNewTaskElement=function(taskString){
 
     editInput.classList.add("input");
     editInput.classList.add("input-text");
+    checkBox.classList.add("input");
+    checkBox.classList.add("input-checkbox");
 
 
     //and appending.
@@ -60,8 +62,6 @@ var createNewTaskElement=function(taskString){
     listItem.appendChild(editInput);
     listItem.appendChild(editButton);
     listItem.appendChild(deleteButton);
-    console.log(editInput)
-    console.log(editInput.classList)
     return listItem;
 }
 

@@ -88,7 +88,7 @@ label[for='new-task'] {
     margin: 0;
     text-transform: uppercase;
 }
-.input-text {}
+
 .input-text {
     margin: 0;
     font-size: 18px;
@@ -131,7 +131,8 @@ label[for='new-task'] {
     vertical-align: middle;
 }
 
-.list__item > input[type="checkbox"] {
+
+.list__item > .input-checkbox {
     margin: 0 10px;
 }
 
