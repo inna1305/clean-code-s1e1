@@ -17,28 +17,28 @@
     </div>
 </figure>
 <section>
-    <div class="container">
-        <div id="add-section">
-            <h1><label for="new-task" class="label-new-task label">Add Item</label></h1>
-            <div class="task-row-wrapper"><input id="new-task"
-                                                 class="task input input-text"
-                                                 type="text">
+    <div class="container todo-list">
+        <div class="add-section">
+            <h1 class="add-section__title"><label for="new-task" class="label-new-task label add-section__label">Add Item</label></h1>
+            <div class="add-section__field"><input id="new-task"
+                                                   class="task input input-text add-section__input"
+                                                   type="text">
                 <button class="button">Add</button>
             </div>
         </div>
-        <h2 class="title">Todo</h2>
-        <ul id="incomplete-tasks" class="list">
-            <li class="list__item">
+        <h2 class="title todo-list__title">Todo</h2>
+        <ul id="incomplete-tasks" class="list todo-list__incomplete">
+            <li class="list__item todo-list__item">
                 <input type="checkbox"
-                       class="input input-checkbox"><label class="task label">Pay Bills</label>
+                       class="input input-checkbox todo-list__checkbox"><label class="task label">Pay Bills</label>
                 <input type="text" class="task input-text input">
                 <button class="edit button">Edit</button>
                 <button class="delete button"><img alt="delete"
                                                    src="./remove.svg"
                                                    class="delete-img"></button>
             </li>
-            <li class="edit-mode list__item">
-                <input type="checkbox" class="input input-checkbox"><label
+            <li class="edit-mode list__item todo-list__item">
+                <input type="checkbox" class="input input-checkbox todo-list__checkbox"><label
                     class="task label">Go Shopping</label><input type="text"
                                                                  value="Go Shopping"
                                                                  class="task input input-text">
@@ -51,7 +51,7 @@
         <h3 class="title">Completed</h3>
         <ul id="completed-tasks" class="list">
             <li class="list__item"><input type="checkbox"
-                                          class="input input-checkbox"
+                                          class="input input-checkbox todo-list__checkbox"
                                           checked>
                 <label class="task label">See the Doctor</label>
                 <input type="text"
